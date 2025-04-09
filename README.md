@@ -28,18 +28,7 @@ git 작업 - **git clone, fetch/reset, commit/push, diff, lfs pull**를 지원�
    ```
 
 3. **빌드**
-    - Powershell이 설치된 환경에서 `build.ps1`을 실행하여 실행 파일을 생성할 수 있습니다.
-    ```bash
-    # PowerShell에서 실행 (Windows/Linux 공통)
-    ./build.ps1
-
-    # 리눅스 실행파일만 빌드
-    ./build.ps1 -Target linux
-
-    # 윈도우 실행파일만 빌드
-    ./build.ps1 -Target windows
-    ```
-    - 또는 직접 PyInstaller 명령어를 사용할 수 있습니다.
+    - PyInstaller 명령어를 사용하여 빌드 합니다.
     ```bash
     python -m PyInstaller -F main.py --name ghapps-auth
     ```
